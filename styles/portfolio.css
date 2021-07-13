@@ -6,33 +6,63 @@ font-family: 'Special Elite', cursive; */
   --text-shadow-black: 2px 3px 3px rgba(0, 0, 0, 0.1);
   --text-shadow-yellow: 1px 1px 1px #fabf58;
   --text-shadow-blue: 1px 1px 1px #b6d2dd;
-  --background-color: #fff6e6;
+  --background-color-one: #fff6e6;
+  --background-color-two: #124912;
   --primary-color: #fabf58;
   --secondary-color: #b6d2dd;
   --tertiary-color: #eeefee;
 }
 
 body {
-  background: var(--background-color);
-  margin: 60px auto;
+  background: var(--background-color-one);
 }
 
-h1 {
-  color: var(--primary-color);
-  font-family: "Abril Fatface", cursive;
-  font-size: 5em;
-  font-weight: bold;
+.hero {
+  background: var(--background-color-two);
+  /* background: radial-gradient(#124912, #000); */
+  padding: 140px 20px;
+  text-align: center;
+  width: auto;
 }
 
-h2 {
+.hero h1 {
   color: #fff;
-  font-family: "Special Elite", cursive;
-  font-size: 3em;
+  font-family: "Abril Fatface", cursive;
+  font-size: 8em;
+  font-weight: normal;
   text-shadow: var(--text-shadow-black);
 }
 
-p {
+.hero h1:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.hero h2 {
+  color: var(--primary-color);
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.hero p {
   color: var(--secondary-color);
   font-family: "Lato", sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
+}
+
+.btn-branding {
+  background: var(--secondary-color);
+  border-radius: 4px;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 15px 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-branding:hover {
+  background: var(--background-color-two);
+  border-color: #fff;
+  color: #fff;
+  box-shadow: 0 0 10px 2px #fff;
 }
