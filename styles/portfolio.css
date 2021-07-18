@@ -10,6 +10,8 @@ font-family: 'Special Elite', cursive; */
   --text-shadow-white: 1px 2px 2px rgba(255, 255, 255, 1);
   --background-color-one: #fff6e6;
   --background-color-two: #124912;
+  --background-color-three: #b6d2dd;
+  --background-color-four: #F0F6F8;
   --primary-color: #fabf58;
   --secondary-color: #124912;
   --tertiary-color: #b6d2dd;
@@ -32,6 +34,23 @@ font-family: 'Special Elite', cursive; */
 
 body {
   background: var(--background-color-one);
+}
+
+.bg-blue { 
+  background: var(--background-color-four);
+}
+
+.bg-white { 
+  background: #fff;
+}
+
+.bg-yellow {
+  background: var(--background-color-one);
+}
+
+.flow-container {
+  padding: 40px;
+  margin: 0 auto;
 }
 
 .hero {
@@ -83,18 +102,19 @@ body {
 }
 
 .btn-projects {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--secondary-color);
   border-radius: 4px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 0.8em;
   line-height: 1em;
   margin-top: 1em;
+  opacity: 70%;
   padding: 12px 24px;
   transition: all 0.2s ease-in-out;
 }
 
 .btn-projects:hover {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: var(--fourth-color);
 }
 
