@@ -3,14 +3,19 @@ font-family: 'Lato', sans-serif;
 font-family: 'Special Elite', cursive; */
 
 :root {
-  --text-shadow-black: 2px 3px 3px rgba(0, 0, 0, 0.1);
+  --box-shadow-black: 2px 5px 5px rgba(0, 0, 0, 0.03);
+  --text-shadow-black: 1px 2px 2px rgba(0, 0, 0, 0.1);
   --text-shadow-yellow: 1px 1px 1px #fabf58;
   --text-shadow-blue: 1px 1px 1px #b6d2dd;
+  --text-shadow-white: 1px 2px 2px rgba(255, 255, 255, 1);
   --background-color-one: #fff6e6;
   --background-color-two: #124912;
   --primary-color: #fabf58;
-  --secondary-color: #b6d2dd;
-  --tertiary-color: #eeefee;
+  --secondary-color: #124912;
+  --tertiary-color: #b6d2dd;
+  --fourth-color: #fff;
+  --display-font: "Abril Fatface", cursive;
+  --body-font: "Lato", sans-serif;
 }
 
 @keyframes slidein {
@@ -38,30 +43,31 @@ body {
 }
 
 .hero h1 {
-  animation-duration: 2s;
-  animation-name: slidein;
+  /* animation-duration: 2s;
+  animation-name: slidein; */
   color: #fff;
-  font-family: "Abril Fatface", cursive;
+  font-family: var(--display-font);
   font-size: 8em;
   font-weight: normal;
+  letter-spacing: -5px;
   text-shadow: var(--text-shadow-black);
 }
 
 .hero h2 {
   color: var(--primary-color);
-  font-family: "Lato", sans-serif;
+  font-family: var(--body-font);
   font-size: 2em;
   font-weight: 700;
 }
 
 .hero p {
   color: var(--secondary-color);
-  font-family: "Lato", sans-serif;
+  font-family: var(--body-font);
   font-size: 1em;
 }
 
 .btn-branding {
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
   border-radius: 4px;
   font-size: 1em;
   line-height: 1.5em;
@@ -74,4 +80,91 @@ body {
   border-color: #fff;
   color: #fff;
   box-shadow: 0 0 10px 2px #fff;
+}
+
+.btn-projects {
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  color: var(--primary-color);
+  font-size: 0.8em;
+  line-height: 1em;
+  margin-top: 1em;
+  padding: 12px 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-projects:hover {
+  background: var(--primary-color);
+  color: var(--fourth-color);
+}
+
+.main-heading h2 {
+  color: var(--tertiary-color);
+  margin: 2em;
+}
+
+.homepage-projects-info {
+  padding: 1em;
+}
+
+.homepage-projects-info h2 {
+  color: var(--primary-color);  
+  margin-bottom: 1em;
+}
+
+.homepage-projects-info p {
+  color: var(--secondary-color);
+  margin: auto;
+  opacity: 70%;
+}
+
+.homepage-projects-img {
+  border-radius: 8px;
+  box-shadow: var(--box-shadow-black);
+}
+
+.project-language {
+  background: var(--primary-color);
+  color: var(--fourth-color);
+  padding: 2px 8px;
+}
+
+.projects-gallery {
+  max-width: 1200px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2em 1em;
+}
+
+footer i {
+  color: var(--tertiary-color);
+  font-size: 2em;
+  margin: auto 8px;
+}
+
+@media (max-width: 960px) {
+  .hero { 
+    padding: 40px 10px;
+  }
+
+  .hero h1 {
+    font-size: 3.5em;
+    letter-spacing: -2px;
+  }
+
+  .hero h2 { 
+    font-size: 1.5em;
+  }
+
+  .main-heading h2 {
+    margin: 1em;
+  }
+
+  .homepage-projects-info {
+    padding: 0, 0, 20px, 0;
+    text-align: center;
+  }
 }
