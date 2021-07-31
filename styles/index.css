@@ -1,19 +1,15 @@
 :root {
   --box-shadow-black: 2px 5px 5px rgba(0, 0, 0, 0.03);
   --text-shadow-black: 1px 2px 2px rgba(0, 0, 0, 0.1);
-  --text-shadow-yellow: 1px 1px 1px #fabf58;
-  --text-shadow-blue: 1px 1px 1px #b6d2dd;
   --text-shadow-white: 1px 2px 2px rgba(255, 255, 255, 1);
-  --background-color-one: #fff6e6;
-  --background-color-two: #124912;
-  --background-color-three: #b6d2dd;
-  --background-color-four: #F0F6F8;
-  --background-color-five: #bcdabc;
   --background-gradient: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
-  --first-color: #fabf58;
-  --second-color: #124912;
-  --third-color: #b6d2dd;
-  --fourth-color: #fff;
+  --color-one: #fabf58;
+  --color-two: #124912;
+  --color-three: #b6d2dd;
+  --color-four: #fff6e6;
+  --color-five: #bcdabc;
+  --color-six: #F0F6F8;
+  --color-seven: #fff;
   --display-font: "Lato", sans-serif;
   --body-font: "Lato", sans-serif;
   --third-font: 'Special Elite', cursive;
@@ -31,8 +27,12 @@
   }
 }
 
+a {
+color: var(--color-two);
+}
+
 body {
-  background: var(--background-color-one);
+  background: var(--color-four);
 }
 
 
@@ -43,13 +43,13 @@ footer {
 }
 
 footer i {
-  color: var(--third-color);
+  color: var(--color-three);
   font-size: 2em;
   margin: auto 8px;
 }
 
 h1 {
-  color: var(--second-color);
+  color: var(--color-two);
   font-family: var(--body-font);
   font-size: 4em;
   font-weight: normal;
@@ -66,7 +66,7 @@ h1 span:nth-child(11) {
 }
 
 h2 {
-  color: var(--first-color);
+  color: var(--color-one);
   font-family: var(--body-font);
   font-size: 2em;
   font-weight: 700;
@@ -74,7 +74,7 @@ h2 {
 }
 
 h3 {
-  color: var(--second-color);
+  color: var(--color-two);
   font-family: var(--body-font);
   font-size: 1.5em;
   font-weight: 700;
@@ -82,14 +82,14 @@ h3 {
 }
 
 p {
-  color: var(--second-color);
+  color: var(--color-two);
   font-family: var(--body-font);
   font-size: 1em;
 }
 
 
 .bg-blue { 
-  background: var(--background-color-four);
+  background: var(--color-six);
 }
 
 .bg-gradient {
@@ -97,7 +97,7 @@ p {
 }
 
 .bg-green {
-  background: var(--background-color-two);
+  background: var(--color-two);
 }
 
 .bg-white { 
@@ -105,12 +105,12 @@ p {
 }
 
 .bg-yellow {
-  background: var(--background-color-one);
+  background: var(--color-four);
 }
 
 .btn {
-  border-color: var(--second-color);
-  color: var(--second-color);
+  border-color: var(--color-two);
+  color: var(--color-two);
   border-radius: 4px;
   font-size: 1em;
   line-height: 1em;
@@ -120,15 +120,15 @@ p {
 }
 
 .btn:hover {
-  background: var(--second-color);
-  box-shadow: 0 0 10px 2px var(--fourth-color);
-  color: var(--fourth-color);
+  background: var(--color-two);
+  box-shadow: 0 0 10px 2px var(--color-seven);
+  color: var(--color-seven);
 }
 
 .btn-branding {
-  background: var(--second-color);
-  border-color: var(--fourth-color);
-  color: var(--fourth-color);
+  background: var(--color-two);
+  border-color: var(--color-seven);
+  color: var(--color-seven);
   border-radius: 4px;
   font-size: 1em;
   line-height: 1.5em;
@@ -137,14 +137,14 @@ p {
 }
 
 .btn-branding:hover {
-  box-shadow: 0 0 10px 2px var(--fourth-color);
-  color: var(--fourth-color);
+  box-shadow: 0 0 10px 2px var(--color-seven);
+  color: var(--color-seven);
 }
 
 .btn-projects {
-  border: 1px solid var(--second-color);
+  border: 1px solid var(--color-two);
   border-radius: 4px;
-  color: var(--second-color);
+  color: var(--color-two);
   font-size: 0.8em;
   line-height: 1em;
   margin-top: 1em;
@@ -154,8 +154,8 @@ p {
 }
 
 .btn-projects:hover {
-  background: var(--second-color);
-  color: var(--fourth-color);
+  background: var(--color-two);
+  color: var(--color-seven);
 }
 
 .col {
@@ -164,13 +164,13 @@ p {
 }
 
 .fafa {
-    color: var(--second-color);
+    color: var(--color-two);
     font-size: 3em;
     transition: all 0.2s ease-in-out;
 }
 
 .fafa:hover {
-    color: var(--first-color);
+    color: var(--color-one);
     font-size: 3.5em;
     text-shadow: var(--text-shadow-white);
 }
@@ -181,7 +181,7 @@ p {
 }
 
 .hero {
-  background: var(--background-color-two);
+  background: var(--color-two);
   background: radial-gradient(#124912, #000); 
   padding: 140px 20px;
   text-align: center;
@@ -202,7 +202,7 @@ p {
 }
 
 .index-hero h2 {
-  color: var(--first-color);
+  color: var(--color-one);
   font-family: var(--body-font);
   font-size: 3em;
   font-weight: 700;
@@ -210,7 +210,7 @@ p {
 
 
 .hero h1 {
-  color: var(--fourth-color);
+  color: var(--color-seven);
 }
 
 .hero h2 {
@@ -219,7 +219,7 @@ p {
 }
 
 .hero p {
-  color: var(--first-color);
+  color: var(--color-one);
 }
 
 .homepage-projects-info {
@@ -227,12 +227,12 @@ p {
 }
 
 .homepage-projects-info h2 {
-  color: var(--first-color);  
+  color: var(--color-one);  
   margin-bottom: 1em;
 }
 
 .homepage-projects-info p {
-  color: var(--second-color);
+  color: var(--color-two);
   margin: auto;
   opacity: 70%;
 }
@@ -243,7 +243,7 @@ p {
 }
 
 .main-heading h2 {
-  color: var(--second-color);
+  color: var(--color-two);
   margin: 12px auto 0 auto;
   opacity: 70%;
 }
@@ -254,7 +254,7 @@ p {
 }
 
 .project {
- background: var(--fourth-color);
+ background: var(--color-seven);
  border-radius: 8px;
  box-shadow: var(--box-shadow-black);
  padding: 1em;
@@ -265,13 +265,13 @@ p {
 }
 
 .project h3 {
- color: var(--third-color);
+ color: var(--color-three);
  margin-top: 20px;
 }
 
 .project-language {
-  background: var(--first-color);
-  color: var(--fourth-color);
+  background: var(--color-one);
+  color: var(--color-seven);
   padding: 2px 8px;
 }
 
@@ -284,7 +284,7 @@ p {
 }
 
 .skills p {
-  color: var(--second-color);
+  color: var(--color-two);
 }
 
 
