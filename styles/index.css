@@ -7,9 +7,8 @@
   --color-two: #124912;
   --color-three: #b6d2dd;
   --color-four: #fff6e6;
-  --color-five: #bcdabc;
+  --color-five: #fff;
   --color-six: #F0F6F8;
-  --color-seven: #fff;
   --display-font: "Lato", sans-serif;
   --body-font: "Lato", sans-serif;
   --third-font: 'Special Elite', cursive;
@@ -37,15 +36,21 @@ body {
 
 
 footer {
+  background-color: var(--color-three);
   display: flex;
   justify-content: center;
-  padding: 2em 1em;
+  padding: 1em 0;
 }
 
 footer i {
-  color: var(--color-three);
+  color: var(--color-five);
   font-size: 2em;
   margin: auto 8px;
+  transition: all 100ms ease-in-out;
+}
+
+footer i:hover {
+  color: var(--color-two);
 }
 
 h1 {
@@ -82,12 +87,12 @@ h3 {
 }
 
 nav {
-  background-color: var(--color-seven);
+  background-color: var(--color-five);
+  box-shadow: var(--box-shadow-black);
   padding: 10px 0;
 }
 
 nav a{
-  box-shadow: var(--box-shadow-black);
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
@@ -155,14 +160,14 @@ p {
 
 .btn:hover {
   background: var(--color-two);
-  box-shadow: 0 0 10px 2px var(--color-seven);
-  color: var(--color-seven);
+  box-shadow: 0 0 10px 2px var(--color-five);
+  color: var(--color-five);
 }
 
 .btn-branding {
   background: var(--color-two);
-  border-color: var(--color-seven);
-  color: var(--color-seven);
+  border-color: var(--color-five);
+  color: var(--color-five);
   border-radius: 4px;
   font-size: 1em;
   line-height: 1.5em;
@@ -171,8 +176,8 @@ p {
 }
 
 .btn-branding:hover {
-  box-shadow: 0 0 10px 2px var(--color-seven);
-  color: var(--color-seven);
+  box-shadow: 0 0 10px 2px var(--color-five);
+  color: var(--color-five);
 }
 
 .btn-projects {
@@ -189,7 +194,7 @@ p {
 
 .btn-projects:hover {
   background: var(--color-two);
-  color: var(--color-seven);
+  color: var(--color-five);
 }
 
 .col {
@@ -244,7 +249,7 @@ p {
 
 
 .hero h1 {
-  color: var(--color-seven);
+  color: var(--color-five);
 }
 
 .hero h2 {
@@ -277,7 +282,7 @@ p {
 }
 
 .logo {
-  border: var(--color-seven);
+  border: var(--color-five);
   border-radius: 22px 4px 22px 4px;
   margin: 0 8px;
   max-height: 60px;
@@ -300,7 +305,7 @@ p {
 }
 
 .project {
- background: var(--color-seven);
+ background: var(--color-five);
  border-radius: 8px;
  box-shadow: var(--box-shadow-black);
  padding: 1em;
@@ -317,7 +322,7 @@ p {
 
 .project-language {
   background: var(--color-one);
-  color: var(--color-seven);
+  color: var(--color-five);
   padding: 2px 8px;
 }
 
@@ -333,6 +338,21 @@ p {
   color: var(--color-two);
 }
 
+.work-enquiry {
+  background-color: var(--color-five);
+  padding: 8px 0;
+  line-height: 76px;
+}
+
+.work-enquiry h2 {
+  padding: 0;
+  margin: 0 0 6px 0;
+}
+
+.work-enquiry h3,btn {
+  padding: 0;
+  margin: 0;
+}
 
 @media (max-width: 960px) {
   
@@ -375,7 +395,6 @@ p {
   .btn {
     display: block; 
     margin: 10px auto;
-
   }
   .hero { 
     padding: 40px 10px;
@@ -392,5 +411,19 @@ p {
   .homepage-projects-info {
     padding: 0, 0, 20px, 0;
     text-align: center;
+  }
+
+  .work-enquiry .btn {
+    font-size: 0.8em;
+    line-height: 0.8em;
+    padding: 10px 12px;
+  }
+
+  .work-enquiry h2 {
+    font-size: 1em;
+  }
+
+  .work-enquiry h3 {
+    font-size: 0.8em;
   }
 }
