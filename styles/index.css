@@ -81,6 +81,40 @@ h3 {
   margin-bottom: 23px;
 }
 
+nav {
+  background-color: var(--color-seven);
+  padding: 10px 0;
+}
+
+nav a{
+  box-shadow: var(--box-shadow-black);
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--color-one);
+}
+
+nav li{
+  display: inline;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 60px;
+  list-style: none;
+  margin-left: 16px;
+}
+
+nav li.active a {
+  color: var(--color-two);
+  opacity: 70%;
+}
+
+nav ul {
+  margin: 0 12px 0 0;
+  padding: 0;
+}
+
 p {
   color: var(--color-two);
   font-family: var(--body-font);
@@ -242,6 +276,18 @@ p {
   box-shadow: var(--box-shadow-black);
 }
 
+.logo {
+  border: var(--color-seven);
+  border-radius: 22px 4px 22px 4px;
+  margin: 0 8px;
+  max-height: 60px;
+  max-width: 210px;
+}
+
+.logo-small {
+  max-width: 60px;
+}
+
 .main-heading h2 {
   color: var(--color-two);
   margin: 12px auto 0 auto;
@@ -309,6 +355,12 @@ p {
     display: block;
     margin: 0 auto;
     width: 100%;
+  }
+
+  nav li{
+    font-size: 16px;
+    line-height: 60px;
+
   }
 
   p {
