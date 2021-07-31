@@ -57,7 +57,7 @@ h1 {
   color: var(--color-two);
   font-family: var(--body-font);
   font-size: 4em;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1;
   text-align: center;
 }
@@ -148,9 +148,9 @@ p {
 }
 
 .btn {
-  border-color: var(--color-two);
+  border: 1px solid var(--color-two);
   color: var(--color-two);
-  border-radius: 4px;
+  border-radius: 22px 4px 22px 4px;
   font-size: 1em;
   line-height: 1em;
   opacity: 70%;
@@ -160,29 +160,14 @@ p {
 
 .btn:hover {
   background: var(--color-two);
-  box-shadow: 0 0 10px 2px var(--color-five);
-  color: var(--color-five);
-}
-
-.btn-branding {
-  background: var(--color-two);
-  border-color: var(--color-five);
-  color: var(--color-five);
-  border-radius: 4px;
-  font-size: 1em;
-  line-height: 1.5em;
-  padding: 15px 30px;
-  transition: all 0.2s ease-in-out;
-}
-
-.btn-branding:hover {
+  border: 1px solid var(--color-one);
   box-shadow: 0 0 10px 2px var(--color-five);
   color: var(--color-five);
 }
 
 .btn-projects {
   border: 1px solid var(--color-two);
-  border-radius: 4px;
+  border-radius: 22px 4px 22px 4px;
   color: var(--color-two);
   font-size: 0.8em;
   line-height: 1em;
@@ -200,6 +185,10 @@ p {
 .col {
   margin: 12px;
   text-align: center;
+}
+
+.contact i {
+  color: var(--color-one);
 }
 
 .fafa {
@@ -222,15 +211,20 @@ p {
 .hero {
   background: var(--color-two);
   background: radial-gradient(#124912, #000); 
-  padding: 140px 20px;
+  line-height: 180px;
+  padding: 60px;
   text-align: center;
   width: auto;
+}
+
+.index-hero {
+  padding: 120px 20px;
 }
 
 .index-hero h1 {
   /* animation-duration: 2s;
   animation-name: slidein; */
-  color: #fff;
+  color: var(--color-five);
   font-family: var(--display-font);
   font-size: 9em;
   font-weight: 300;
@@ -282,15 +276,20 @@ p {
 }
 
 .logo {
-  border: var(--color-five);
+  border: 3px solid transparent;
   border-radius: 22px 4px 22px 4px;
   margin: 0 8px;
   max-height: 60px;
   max-width: 210px;
+  transition: all 0.2s ease-in-out;
 }
 
 .logo-small {
   max-width: 60px;
+}
+
+.logo:hover {
+  border: 3px solid var(--color-one);
 }
 
 .main-heading h2 {
@@ -394,7 +393,7 @@ p {
 
   .btn {
     display: block; 
-    margin: 10px auto;
+    margin: 10px;
   }
   .hero { 
     padding: 40px 10px;
