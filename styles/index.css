@@ -190,6 +190,7 @@ p {
   color: var(--color-one);
 }
 
+
 .fafa {
     color: var(--color-two);
     font-size: 3em;
@@ -226,8 +227,6 @@ p {
 }
 
 .index-hero h1 {
-  /* animation-duration: 2s;
-  animation-name: slidein; */
   color: var(--color-five);
   font-family: var(--display-font);
   font-size: 9em;
@@ -236,6 +235,24 @@ p {
   letter-spacing: 8px;
   margin-bottom: 0.5em;
   text-shadow: var(--text-shadow-black);
+}
+
+.index-hero h2 span {
+  animation: animate 1s cubic-bezier(0.47, 0, 0.745, 0.715) backwards;
+  animation-delay: 0.04s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+  }
 }
 
 .index-hero h2 {
